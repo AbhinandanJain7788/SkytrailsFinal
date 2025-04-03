@@ -17,7 +17,9 @@ const BlogList = () => {
   const [comments, setComments] = useState({}); // State for storing comments
 
   const itemsPerPage = 6;
-  const API_KEY = "6cab50dcfb1742f8b4d180c057d2510b";
+  // const API_KEY = "6cab50dcfb1742f8b4d180c057d2510b";
+  const API_KEY = import.meta.env.VITE_API_KEY;
+
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
