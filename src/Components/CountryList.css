@@ -1,0 +1,251 @@
+
+.countries-container {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-input{
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .search-box:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Countries Grid */
+  .countries-grid {
+  
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive width */
+      gap: 20px;
+      justify-content: center;
+  }
+  
+  /* Country Card */
+  .country-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Flag Styling */
+  .flag {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Blog Actions */
+  .blog-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Like Button */
+  .like-btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 140px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .like-btn1:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Comment Section */
+  .comment-section {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .comment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    background: #f8f9fa;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .pagination li {
+    margin: 5px;
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pagination li:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  .pagination .active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .pagination .disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Map Container */
+  .map-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto; /* Centering */
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      text-align: center;
+    }
+  
+    /* Center Heading */
+    h1, h2, h3 {
+      text-align: center;
+    }
+  
+    .search-box {
+      width: 90%;
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .countries-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      gap: 15px;
+    }
+  
+    .country-card {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .flag {
+      width: 80px;
+      height: 50px;
+    }
+  
+    .blog-actions {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .like-btn1 {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .comment-input {
+      width: 100%;
+      font-size: 13px;
+      padding: 7px;
+    }
+  
+    .comment-item {
+      font-size: 13px;
+      padding: 5px;
+    }
+  
+    .pagination {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .pagination li {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  
+    /* Fixing Map Container Width */
+    .map-container {
+      width: 90%;
+      max-width: 350px;
+      padding: 10px;
+      margin: 15px auto;
+    }
+  }
+  
